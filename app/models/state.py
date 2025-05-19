@@ -87,5 +87,9 @@ class ThinkState(BaseModel):
         Extract the user messages from the request.
         """
         return " ".join(
-            [message.content for message in self.req.messages if message.role == "user"]
+            [
+                message.content
+                for message in self.req.messages
+                if message.role == "user" and message.content
+            ]
         )
