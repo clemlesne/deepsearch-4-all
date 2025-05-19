@@ -23,7 +23,7 @@ async def test_openai_sync():
     ) as client:
         # Test API
         res = await client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4.1-nano",
             messages=MESSAGES,
         )
 
@@ -53,7 +53,7 @@ async def test_openai_stream():
     ) as client:
         # Test API
         res = await client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4.1-nano",
             messages=MESSAGES,
             stream=True,
         )

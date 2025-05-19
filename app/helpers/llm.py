@@ -275,12 +275,14 @@ async def _raw_completion(  # noqa: PLR0913
     # Update usage
     # TODO: Consumption is not accurate at all with that method, use data from the response
     usage.completion_tokens += token_counter(
-        messages=[choice.message.model_dump()],
+        messages=[choice.message.model_dump(exclude={"annotations"})],
         model=model,
     )  # Increment completion from the response string
     usage.prompt_tokens += token_counter(
         messages=[
-            message.model_dump() if isinstance(message, BaseModel) else message
+            message.model_dump(exclude={"annotations"})
+            if isinstance(message, BaseModel)
+            else message
             for message in sent_history
         ],
         model=model,

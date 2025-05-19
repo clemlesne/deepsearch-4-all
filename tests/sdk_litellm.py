@@ -18,7 +18,7 @@ async def test_litellm_sync():
         api_key="mock",
         base_url="http://localhost:8080/v1",
         messages=MESSAGES,
-        model="openai/gpt-4o-mini",
+        model="openai/gpt-4.1-nano",
     )
 
     # Validate response
@@ -46,7 +46,7 @@ async def test_litellm_stream():
         api_key="mock",
         base_url="http://localhost:8080/v1",
         messages=MESSAGES,
-        model="openai/gpt-4o-mini",
+        model="openai/gpt-4.1-nano",
         stream=True,
     )
 
