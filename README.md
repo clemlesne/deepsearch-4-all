@@ -1,4 +1,4 @@
-# 🧠 DeepThink API
+# 🧠 DeepSearch 4 All
 
 It simply expose a OpenAI compatible LLM API, answering like a thinking LLM. But in the backend, it performs a graph-based search and introspection to answer your question.
 
