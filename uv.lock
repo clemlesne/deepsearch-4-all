@@ -306,7 +306,7 @@ wheels = [
 ]
 
 [[package]]
-name = "deepthink-api"
+name = "deepsearch-4-all"
 source = { virtual = "." }
 dependencies = [
     { name = "aiojobs" },

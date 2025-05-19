@@ -8,7 +8,7 @@ default_location := swedencentral
 openai_location := swedencentral
 search_location := westeurope
 # Container configuration
-container_name := ghcr.io/microsoft/deepthink-api
+container_name := ghcr.io/clemlesne/deepsearch-4-all
 # Bicep outputs
 api_url ?= $(shell az deployment sub show --name $(name) | yq '.properties.outputs["apiUrl"].value')
 blob_account_name ?= $(shell az deployment sub show --name $(name) | yq '.properties.outputs["blobAccountName"].value')

@@ -43,7 +43,7 @@ class Usage(BaseModel):
 class ChatCompletionResponse(BaseModel):
     choices: list[ChatChoiceMessage | ChatChoiceChunk]
     created: int = Field(default_factory=lambda: int(time()))
-    id: str = Field(default_factory=lambda: f"deepthink-{uuid4().hex}")
+    id: str = Field(default_factory=lambda: f"deepsearch-4-all-{uuid4().hex}")
     model: str
     object: Literal["chat.completion", "chat.completion.chunk"]
     usage: Usage | None

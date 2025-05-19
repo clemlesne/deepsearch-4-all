@@ -51,7 +51,7 @@ configure_once(
 )
 
 # Framework does not exactly expose Logger, but that's easier to work with
-logger: Logger = structlog_get_logger("deepthink-api")
+logger: Logger = structlog_get_logger("deepsearch-4-all")
 
 # Enable debug logging on CI
 if IS_CI:

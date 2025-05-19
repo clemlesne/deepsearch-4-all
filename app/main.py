@@ -13,21 +13,21 @@ from app.think import think_stream, think_sync
 
 # First log
 logger.info(
-    "deepthink-api v%s",
+    "deepsearch-4-all v%s",
     VERSION,
 )
 
 # FastAPI
 api = FastAPI(
     contact={
-        "url": "https://github.com/clemlesne/deepthink-api",
+        "url": "https://github.com/clemlesne/deepsearch-4-all",
     },
-    description="DeepThink exposed as a standard LLM API with thinking. Swappable model backend.",
+    description="DeepSearch exposed as a standard LLM API with thinking. Swappable model backend.",
     license_info={
         "name": "Apache-2.0",
-        "url": "https://github.com/clemlesne/deepthink-api/blob/master/LICENSE",
+        "url": "https://github.com/clemlesne/deepsearch-4-all/blob/master/LICENSE",
     },
-    title="deepthink-api",
+    title="deepsearch-4-all",
     version=VERSION,
 )
 

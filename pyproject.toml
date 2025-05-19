@@ -1,8 +1,8 @@
 [project]
-description = "DeepThink exposed as a standard LLM API with thinking. Swappable model backend."
+description = "DeepSearch exposed as a standard LLM API with thinking. Swappable model backend."
 dynamic = ["version"]
 license = { file = "LICENSE" }
-name = "deepthink-api"
+name = "deepsearch-4-all"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -61,7 +61,7 @@ select = ["A", "ARG", "ASYNC", "DTZ", "I", "PERF", "PL", "RUF", "T20", "UP"]
 [tool.pytest.ini_options]
 asyncio_default_fixture_loop_scope = "function"
 asyncio_mode = "auto"
-junit_suite_name = "deepthink-api"
+junit_suite_name = "deepsearch-4-all"
 log_file_level = "INFO"
 pythonpath = ["app"]
 testpaths = ["tests"]
