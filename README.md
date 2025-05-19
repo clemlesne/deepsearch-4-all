@@ -1,5 +1,7 @@
 # 🧠 DeepSearch 4 All
 
+Replace all OpenAI-compatible integration to have a powerful and thinking answers!
+
 It simply expose a OpenAI compatible LLM API, answering like a thinking LLM. But in the backend, it performs a graph-based search and introspection to answer your question.
 
 ## How do I consume it?
