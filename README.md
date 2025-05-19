@@ -19,7 +19,7 @@ async with AsyncOpenAI(
     base_url="http://localhost:8080/v1",
 ) as client:
     res = await client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4.1-nano",
         messages=[
             ChatCompletionUserMessageParam(
                 content="What is the status of the world?",
